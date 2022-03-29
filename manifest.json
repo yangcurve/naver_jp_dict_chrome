@@ -1,0 +1,11 @@
+{
+  "name": "Naver Japanese Dictionary",
+  "version": "0.0.1",
+  "description": "Naver Japanese Dictionary",
+  "permissions": ["tabs", "scripting"],
+  "host_permissions": ["https://*/", "http://*/"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}
