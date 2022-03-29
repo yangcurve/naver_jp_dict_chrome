@@ -6,10 +6,10 @@ chrome.tabs.query({ active: true, currentWindow: true }, ([{ id }]) => {
     },
     ([{ result }]) => {
       const iframe = document.getElementById('iframe')
-      const src = 'https://ja.dict.naver.com/#/mini'
+      const url = 'https://ja.dict.naver.com/#/mini'
 
-      if (!result) iframe.src = `${src}/main`
-      else iframe.src = `${src}/search?query=${result}`
+      if (!result) iframe.src = `${url}/main`
+      else iframe.src = `${url}/search?query=${result}`
     }
   )
 })
